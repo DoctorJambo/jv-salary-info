@@ -34,8 +34,10 @@ public class SalaryInfo {
         StringBuilder builder = new StringBuilder();
         builder.append("Report for period ").append(dateFrom).append(" - ").append(dateTo);
         for (int i = 0; i < names.length; i++) {
-            builder.append(System.lineSeparator())
-                    .append(names[i]).append(" - ").append(totalSalaries[i]);
+            builder
+                    .append(System.lineSeparator())
+                    .append(names[i]).append(" - ")
+                    .append(totalSalaries[i]);
         }
 
         return builder.toString();
